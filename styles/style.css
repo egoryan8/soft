@@ -3,6 +3,7 @@
 .page {
   margin: 0 auto;
   min-width: 320px;
+  position: relative;
 }
 
 .accent-blue {
@@ -25,6 +26,9 @@
 
 .header {
   background: rgba(16, 16, 29, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 .header__logo {
   font-family: "Raleway";
@@ -69,7 +73,7 @@
   margin: 0;
 }
 .main__title {
-  margin: 0 0 80px 0;
+  margin: 103px 0 80px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
