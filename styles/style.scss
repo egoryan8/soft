@@ -62,15 +62,15 @@
 }
 
 .main {
+  font-family: 'Lato';
   background-image: url(../images/main.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 103px 0 0 0;
+  padding: 103px 0 203px;
   margin: 0;
   &__title {
     margin: 0 0 80px 0;
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -80,7 +80,6 @@
   }
   &__text-heading {
     margin: 0;
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -91,7 +90,6 @@
     list-style: none;
   }
   &__text-paragraph {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -100,6 +98,36 @@
       content: '-';
       padding: 10px;
       font-weight: 900;
+    }
+  }
+  &__buttons {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+  }
+  &__button {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px 0;
+    width: 183px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: opacity 0.4s, transform 0.4s;
+    &_type_order {
+      background-color: #3e9cdc;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+    &_type_detailed {
+      background: #ffffff;
+      border: 1px solid #6f6d7b;
+      border-radius: 4px;
+      color: #2a2b30;
+    }
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
     }
   }
 }
