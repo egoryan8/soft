@@ -1,0 +1,103 @@
+@import url(../vendor/normalize.css);
+@import url(../fonts/fonts.css);
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.accent-blue {
+  color: #3e9cdc;
+}
+.accent-blue__logo {
+  color: #42a9ed;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.container_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.header {
+  background: rgba(16, 16, 29, 0.9);
+}
+.header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+}
+.header__nav-link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: opacity, color 0.7s;
+}
+.header__nav-link:hover {
+  color: #43abf0;
+  opacity: 0.8;
+}
+
+.main {
+  background-image: url(../images/main.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 103px 0 0 0;
+  margin: 0;
+}
+.main__title {
+  margin: 0 0 80px 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  max-width: 780px;
+}
+.main__text-heading {
+  margin: 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main__text-list {
+  padding: 0;
+  list-style: none;
+}
+.main__text-paragraph {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main__text-paragraph::before {
+  content: "-";
+  padding: 10px;
+  font-weight: 900;
+}
