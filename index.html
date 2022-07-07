@@ -14,7 +14,9 @@
           <a href="" class="header__logo">loremipsum.<span class="accent-blue">net</span></a>
           <nav>
             <ul class="header__nav-menu">
-              <li class="header__nav-item"><a href="#" class="header__nav-link">Бизнес</a></li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link header__nav-link_active">Бизнес</a>
+              </li>
               <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
               <li class="header__nav-item"><a href="#" class="header__nav-link">Цены</a></li>
               <li class="header__nav-item">
@@ -51,7 +53,98 @@
             </div>
           </div>
         </section>
+        <section class="order">
+          <div class="container">
+            <h2 class="order__title">Оформление&nbsp;<span class="accent-blue">Заказа</span></h2>
+            <p class="order__subtitle">
+              Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            </p>
+            <ul class="order__status">
+              <li class="order__card">
+                <div class="order__circle-wrapper">
+                  <div class="order__circle order__circle_type_search"></div>
+                </div>
+                <h3 class="order__card-title">Lorem ipsum dolor sit amet</h3>
+              </li>
+              <li class="order__card">
+                <div class="order__circle order__circle_type_percent"></div>
+                <h3 class="order__card-title">Сonsecteturadipiscing elit</h3>
+              </li>
+              <li class="order__card">
+                <div class="order__circle order__circle_type_file"></div>
+                <h3 class="order__card-title">Sed do eiusmod tempor</h3>
+              </li>
+              <li class="order__card">
+                <div class="order__circle order__circle_type_mail"></div>
+                <h3 class="order__card-title">Esse cillum dolore eu fugiat</h3>
+              </li>
+              <li class="order__card">
+                <div class="order__circle order__circle_type_money"></div>
+                <h3 class="order__card-title">Excepteur sint occaecat cupidatat non proident</h3>
+              </li>
+            </ul>
+            <form class="order__form">
+              <input
+                type="select"
+                class="order__input"
+                id="order__select"
+                placeholder="Выберите тип системы"
+              />
+              <input type="email" class="order__input" placeholder="Ваш e-mail" />
+              <input type="text" class="order__input" placeholder="Ваше имя" />
+
+              <input type="range" class="order__input-range" />
+              <input type="file" id="file" class="order__input-file" />
+              <label for="file" class="order__file-label">
+                <img
+                  src="./images/input-file.svg"
+                  alt="Прикрепите файл иконка"
+                  class="order__file-img"
+                />
+                Прикрепите файл
+              </label>
+              <button type="submit" class="order__submit-btn">Отправить</button>
+            </form>
+          </div>
+        </section>
       </main>
+      <footer class="footer">
+        <div class="container container_footer">
+          <p class="footer__copyright">
+            &copy; 2018 «LoremIpsum.net» Все права защищены.<span class="separator">|</span>
+          </p>
+          <ul class="footer__payment-methods">
+            <li class="footer__list-item">
+              <a href="#" class="footer__payment-method" target="_blank"
+                ><img src="./images/footer/qiwi.svg" alt="" />QIWI wallet</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__payment-method" target="_blank"
+                ><img src="./images/footer/yandex.svg" alt="" />Yandex Money</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__payment-method" target="_blank"
+                ><img src="./images/footer/webMoney.svg" alt="" />Web Money</a
+              >
+            </li>
+            <span class="separator">|</span>
+          </ul>
+          <ul class="footer__connection">
+            <li class="footer__list-item">
+              <a href="#" class="footer__connection-link" target="_blank"
+                ><img src="./images/footer/mail.svg" alt="картинка почты" />info@ipsum228.com</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__connection-link" target="_blank"
+                ><img src="./images/footer/VK.svg" alt="лого вконтакте" />Мы вконтакте</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
